@@ -25,13 +25,19 @@ export class ShowDepComponent implements OnInit {
       DepartmentId:0,
       DepartmentName:""
     }
-    this.ModalTitle="Add Department"
+    this.ModalTitle="Add Department";
     this.ActivateAddEditDepComp=true;
   }
 
   closeClick(){
     this.ActivateAddEditDepComp=false;
     this.refreshDepList();
+  }
+
+  editClick(item:any){
+    this.dep = item;
+    this.ModalTitle="Add Department";
+    this.ActivateAddEditDepComp=true;
   }
 
   refreshDepList(){

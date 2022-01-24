@@ -8,7 +8,7 @@ import { SharedService } from 'src/app/shared.service';
 })
 export class AddEditDepComponent implements OnInit {
 
-  constructor() { }
+  constructor(private service:SharedService) { }
 
   @Input() dep:any;
 
