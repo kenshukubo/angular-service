@@ -45,7 +45,9 @@ data-backdrop="static" data-keyboard="false"
                 (click)="editClick(dataItem)"
                 data-backdrop="static" data-keyboard="false"
                 >Edit</button>
-                <button type="button" class="btn btn-light mr-1">Delete</button>
+                <button type="button" class="btn btn-light mr-1"
+                (click)="deleteClick(dataItem)"
+                >Delete</button>
             </td>
         </tr>
     </tbody>
