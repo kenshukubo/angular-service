@@ -49,7 +49,7 @@ export class SharedService {
   //   return this.http.post(this.APIUrl+'/Employee/SaveFile',val);
   // }
 
-  // getAllDepartmentNames():Observable<any[]>{
-  //   return this.http.get<any[]>(this.APIUrl+'/Employee/GetAllDepartmentNames');
-  // }
+  getAllDepartmentNames():Observable<any[]>{
+    return this.http.get<any[]>(this.APIUrl+'/Employee/GetAllDepartmentNames');
+  }
 }
